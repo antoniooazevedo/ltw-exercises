@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>cool form</title>
+    </head>
+    <body>
+        <main>
+            <form action="submit.php" method="get">
+                <label>
+                    Name: <input type="text" placeholder="Your Name" name="name" required="required">
+                </label>
+                <br>
+
+                Age:
+                <br>
+                <label>
+                    <input type="radio" name="age" value="&lt18">&lt;18
+                </label>
+                <label>
+                    <input type="radio" name="age" value="19-35">19-35
+                </label>
+                <label>
+                    <input type="radio" name="age" value="36-48">36-48
+                </label>
+                <label>
+                    <input type="radio" name="age" value="&gt49">&gt;49
+                </label>
+                <br>
+
+                <label>
+                    Profession: 
+                    <input name="profession" list="professions" value="Teacher">
+                </label>
+                <datalist id="professions">
+                    <option selected>Teacher</option>
+                    <option>Fireman</option>
+                    <option>Mailman</option>
+                    <option>Student</option>
+                    <option>Carpenter</option>
+                </datalist>
+                <br>
+
+                <label>
+                    Country:
+                    <select name="country" required>
+                        <option value="">Select One</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Somalia">Somalia</option>
+                        <option value="Mongolia">Mongolia</option>
+                        <option value="Marrocos">Marrocos</option>
+                    </select>
+                </label>
+                <br>
+
+                Interests:
+                <label>
+                    <input type="checkbox" name="Interests" value="Lifting">Lifting
+                </label>
+                <label>
+                    <input type="checkbox" name="Interests" value="Lifting">Coding
+                </label>
+                <label>
+                    <input type="checkbox" name="Interests" value="Lifting">Riding a bike
+                </label>
+                <label>
+                    <input type="checkbox" name="Interests" value="Lifting">Tirar leite a cabras
+                </label>
+                <br>
+
+                <label>
+                    How did you find us?
+                    <br>
+                    <textarea name="text_description" rows="5" cols="60">Write Here!
+                    </textarea>
+                </label>
+                <br>
+
+                <button formmethod="get" formaction="submit.php" type="submit">
+                    Submit
+                </button>
+            </form>
+        </main>
+    </body>
+</html>
