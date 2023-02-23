@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:300,200');
+
+nav > label{
+    display: none;
+}
+nav > input{
+    display:none;
+}
+
+*{
+    background-color: forestgreen;
+}
+
+body *{
+    background-color: white;
+}
+body{
+    max-width: 830px;
+    margin: 0 auto;
+    padding: 0.5em;
+    background-color: white;
+}
+
+header{
+    background-color: #046DD5 ;
+    color: white;
+    padding-bottom: 1em;
+    margin-bottom: 0;
+
+}
+
+header *{
+    background-color: #046DD5;
+    color: white;
+
+    margin-top: 0;
+
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    
+}
+header > h1{
+    font-size: 1.8em;
+
+    padding-left: 0.4em;
+    padding-top: 0.5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+header > h2{
+    margin-top: 0;
+    padding-left: 0.6em;
+
+    font-weight: normal;
+    font-size: 1.35em;
+}
+
+#signup a{
+    padding-left: 0.9em;
+}
+
+#signup a:not(:last-child)::after{
+    padding-left: 0.9em;
+    content: '|';
+}
+
+#menu ul{
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+#menu ul > li{
+    margin: 0em;
+    margin-bottom: 1em;
+}
+
+
+#menu ul > li > a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: black;
+}
+
+#menu ul > li::before{
+    content: "";
+    display:block;
+    background-color: black;
+    width: 1;
+    height: 5px;
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+#menu ul > li:nth-child(1)::before{
+    background-color: red;
+}
+#menu ul > li:nth-child(2)::before{
+    background-color:lawngreen;
+}
+#menu ul > li:nth-child(3)::before{
+    background-color: purple;
+}
+#menu ul > li:nth-child(4)::before{
+    background-color: orange;
+}
+#menu ul > li:nth-child(5)::before{
+    background-color: cyan;
+}
+#menu ul > li:nth-child(6)::before{
+    background-color: plum;
+}
+
+aside#related {
+    background-color:#2A2F33;
+}
+
+aside#related *{
+    color: white;
+    background-color:#2A2F33;
+
+    text-decoration: none;
+}
+aside#related article > h1{
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 1em;
+    padding-bottom: 0;
+    padding-top: 0.5em;
+}
+
+aside#related article:first-child > h1{
+    padding-top: 2em;
+}
+aside#related article:last-child > p{
+    padding-bottom: 2em;
+}
+
+aside#related article > p{
+    padding: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 0.4em;
+
+    font-family: 'Lora';
+    font-size: 0.89em;
+    
+}
+
+
