@@ -21,12 +21,15 @@ body{
     background-color: white;
 }
 
+
+
+
+
 header{
     background-color: #046DD5 ;
     color: white;
     padding-bottom: 1em;
     margin-bottom: 0;
-
 }
 
 header *{
@@ -38,7 +41,6 @@ header *{
     font-family:Arial, Helvetica, sans-serif;
     text-align: left;
     text-decoration: none;
-    
 }
 header > h1{
     font-size: 1.8em;
@@ -56,6 +58,10 @@ header > h2{
     font-size: 1.35em;
 }
 
+
+
+
+
 #signup a{
     padding-left: 0.9em;
 }
@@ -64,6 +70,10 @@ header > h2{
     padding-left: 0.9em;
     content: '|';
 }
+
+
+
+
 
 #menu ul{
     margin: 0;
@@ -76,7 +86,6 @@ header > h2{
     margin: 0em;
     margin-bottom: 1em;
 }
-
 
 #menu ul > li > a{
     text-decoration: none;
@@ -115,6 +124,9 @@ header > h2{
     background-color: plum;
 }
 
+
+
+
 aside#related {
     background-color:#2A2F33;
 }
@@ -148,7 +160,86 @@ aside#related article > p{
 
     font-family: 'Lora';
     font-size: 0.89em;
-    
 }
 
 
+
+section#news article{
+    position: relative;
+    display: inline-block;
+}
+section#news article img{
+    display: block;
+    width: 100%;
+}
+
+section#news article h1{
+    position:absolute;
+    top: 1em;
+    left: 0.5em;
+    width: 8em;
+
+    text-shadow: 2px 3px 5px #000000;
+    background-color: transparent;
+}
+section#news article header, h1 a{
+    background-color: transparent;
+}
+
+section#news article p{
+    font-family: 'Lora';
+    font-size: medium;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+section#news article > p:first-of-type::first-letter{
+    font-size: 2em;
+}
+
+section#news article footer, section#news article footer *{
+    background-color: salmon;
+}
+
+section#news article footer{
+    padding: 1em;
+}
+
+.author{
+    color: white;
+
+    font-family: 'Poppins';
+    font-size: 0.8em;
+}
+
+.author::before{
+    content: "By "
+}
+
+.tags, .tags *, .date, a.comments{
+    font-family: 'Poppins';
+    font-size: 0.9em;
+    color: white
+}
+
+.date{
+    padding: 1em;
+}
+
+a.comments::after{
+    content: " comments";
+}
+
+body > footer, body > footer *{
+    background-color: #000000;
+    color: white;
+    font-family: 'Lora';
+    font-size: medium;
+    padding-left: 0.5em;
+    
+}
+
+footer{
+    margin-top: 1em;
+    padding: 0.2em;
+}
