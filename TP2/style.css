@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+
+body{
+    max-width: min-content;
+    margin: auto;
+}
+
+body *{
+    background-color:antiquewhite;
+
+}
+header h1{
+    font-family: 'Imperial Script', cursive;
+    text-align: center;
+    font-size: 8rem;
+    font-weight: normal;
+    background-color: white;
+    margin-bottom: .5em;
+}
+
+h2{
+    font-family: 'Ruda';
+    font-weight: normal;
+    text-align: right;
+    font-size: 2rem;
+
+    padding-top: 1em;
+    margin-top: 0;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+header h2{
+    padding-top: 0;
+}
+
+h2::after{
+    content: "";
+    display: block;
+    width:auto;
+    height: 2px;
+    background-color: black;
+}
+
+header dl{
+    margin: 1em;
+    border-radius: 10px;
+    border: 2px dashed salmon;
+    border-right-style:solid;
+    border-right-width: .5em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 1em;
+    padding-bottom: 0.5em;
+    background-color: rgba(255, 120, 105, 0.4);
+    margin-bottom: 0;
+}
+
+
+header dl dt{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-family: 'Crimson Pro';
+    background-color: rgba(255, 120, 105, 0.01)
+}
+header dl dd{
+    font-family: 'Crimson Pro';
+    font-size: 1.2em;
+    margin-left: 0;
+    background-color: rgba(255, 120, 105, 0.01);
+    padding-bottom: 0.5rem;
+}
+
+header dl dd:last-child{
+    padding-bottom: 0;
+}
+
+header dl dt::first-letter{
+    font-size: 1.2em;
+}
+
+.description p{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: max-content;
+
+    font-family: 'Crimson Pro';
+    font-size: 1.2em;
+}
+.description img{
+    margin-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.ingredients h3{
+    font-family: 'Crimson Pro';
+    padding-left: 1em;
+    font-weight:bold;
+    font-size: 1.3em;
+}
+.ingredients li{
+    padding: 0.5em;
+    font-family: 'Crimson Pro';
+    font-size: 1.2em;
+    font-weight:bold;
+}
+
+mark{
+    color: darkcyan;
+    font-weight: bolder;
+}
+
+.method li{
+    font-family: 'Crimson Pro';
+    font-weight: bold;
+    padding: 0.5em;
+}
+
+.method ol{
+    padding-bottom: 1.5em;
+}
