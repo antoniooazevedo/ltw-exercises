@@ -15,7 +15,6 @@ body *{
     background-color: white;
 }
 body{
-    max-width: 830px;
     margin: 0 auto;
     padding: 0.5em;
     background-color: white;
@@ -60,8 +59,6 @@ header > h2{
 
 
 
-
-
 #signup a{
     padding-left: 0.9em;
 }
@@ -84,7 +81,7 @@ header > h2{
 
 #menu ul > li{
     margin: 0em;
-    margin-bottom: 1em;
+    padding-bottom: 1em;
 }
 
 #menu ul > li > a{
@@ -92,6 +89,11 @@ header > h2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     color: black;
+}
+
+#menu ul > li:hover, #menu ul>li:hover >a{
+    background-color: #2A2F33;
+    color: white;
 }
 
 #menu ul > li::before{
