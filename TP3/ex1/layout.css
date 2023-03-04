@@ -1,0 +1,20 @@
+body{
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+body > header{
+    display: grid;
+    grid-template-areas: "title title"
+                         "subtitle signup";    
+}
+body > header > h1{
+    grid-area: title;
+}
+body > header > h2{
+    grid-area: subtitle;
+}
+body > header > #signup{
+    grid-area: signup;
+    
+}
